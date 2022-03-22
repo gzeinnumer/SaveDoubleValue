@@ -45,5 +45,11 @@ public class MainActivity extends AppCompatActivity {
         Log.d(TAG, "onCreate: "+saveDoubleText("0.00000008")); //#0.00000000 change pola 8.0E-8
 
         Log.d(TAG, "onCreate: "+saveDoubleText("1234.5678")); //1234.5678
+        Log.d(TAG, "onCreate: "+saveDoubleText("1234.5678,00")); //1234.5678
+        Log.d(TAG, "onCreate: "+saveDoubleText("1234.5678,1")); //1234.5678
+        Log.d(TAG, "onCreate: "+saveDoubleText("1234.5678,01")); //1234.5678
+
+        Log.d(TAG, "onCreate: "+saveDoubleText("29.050,00")); //29.05
+
     }
 }
