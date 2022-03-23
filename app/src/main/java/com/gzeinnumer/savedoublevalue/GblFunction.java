@@ -7,6 +7,7 @@ import java.util.Locale;
 public class GblFunction {
 
     /*
+    good for percetace, not for money
     * 5.0000 = 5
     * 5.1000 = 5.1
     * 5.0004 = 5.0004
@@ -14,6 +15,9 @@ public class GblFunction {
     * 0.1000 = 0.1
     * 0.02000000 = 0.02
     * 29.050,00 = 29.05
+
+    for money use this
+    https://github.com/gzeinnumer/SaveMoneyValue
      */
     public static String saveDoubleText(String value){
         if (value ==null){
