@@ -16,6 +16,9 @@ public class GblFunction {
     * 29.050,00 = 29.05
      */
     public static String saveDoubleText(String value){
+        if (value ==null){
+            return "0";
+        }
         if (value.contains(",")){
             value = value.substring(0, value.indexOf(","));
         }

@@ -40,6 +40,12 @@ import java.text.NumberFormat;
 public class GblFunction {
 
     public static String saveDoubleText(String value){
+        if (value == null){
+            return "0";
+        }
+        if (value.contains(",")){
+            value = value.substring(0, value.indexOf(","));
+        }
         String pola = "#0.00000000";
         if (!pola.contains("."))
             return "0";
